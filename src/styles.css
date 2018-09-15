@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: FortFont;
+    src: url(/assets/BurbankBigCondensed-Bold.otf);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: FortFont, 'Roboto', sans-serif; }
+
+.big-icon{
+    font-size: 30px;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.big-icon.active{
+    color: orangered;
+}
+
