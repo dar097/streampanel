@@ -20,9 +20,9 @@ export class NotificationComponent implements OnInit {
       this.subbox.nativeElement.className += ' appear';    
       this.subscriber = 'Aquaterion';
       setTimeout(() => {
-        this.subbox.nativeElement.className = this.subbox.nativeElement.className.split(' appear').join('');
         this.subbox.nativeElement.className += ' disappear';
         setTimeout(() => {
+          this.subbox.nativeElement.className = this.subbox.nativeElement.className.split(' appear').join('');
           this.subbox.nativeElement.className = this.subbox.nativeElement.className.split(' disappear').join('');
           this.subscriber = '';
         }, 1000);

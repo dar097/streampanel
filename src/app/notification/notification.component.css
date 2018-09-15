@@ -33,7 +33,6 @@
 
 #subtext{
     opacity: 0;
-    animation: stretchy .5s  linear .5s 1 normal forwards;
     text-shadow: 1px 1px 7px rgba(0,0,0,0.25);
 }
 
@@ -51,6 +50,10 @@
 
 .appear{
     animation: appear 1s linear 0s 1 normal forwards;
+}
+
+.appear #subtext{
+    animation: stretchy .5s  linear .5s 1 normal forwards;
 }
 
 .disappear{
