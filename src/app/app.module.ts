@@ -22,7 +22,7 @@ import { NotificationComponent } from './notification/notification.component';
   imports: [
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'subs', component: RecentSubsComponent },
+      { path: 'donations', component: RecentSubsComponent },
       { path: 'notification', component: NotificationComponent },
       { path: '**', redirectTo: '/' }
     ]),

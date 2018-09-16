@@ -1,6 +1,18 @@
-<div style="height: 100%; width: 100%; background-color: white;">
-  <p>
-    recent-subs works!
-  </p>
-
+<div id="donos" style="height: 100%; width: 100%; padding: 50px; padding-left: 0;">
+  <div *ngFor="let donation of donations" class="subbar slide-in" fxLayout="row" fxLayout="start start">
+    <div class="name" fxLayout="row" fxLayoutAlign="start center">
+      <span class="namecontainer">{{donation.donator}}</span>
+    </div>
+    <div class="money" fxLayout="row" fxLayoutAlign="center center">
+      <span>{{donation.amount}}</span>
+    </div>
+  </div>
+  <div *ngIf="buffer && buffer.length" class="subbar" fxLayout="row" fxLayout="start start">
+      <div class="name" fxLayout="row" fxLayoutAlign="start center">
+        <span class="namecontainer">{{buffer.donator}}</span>
+      </div>
+      <div class="money" fxLayout="row" fxLayoutAlign="center center">
+        <span>{{buffer.amount}}</span>
+      </div>
+    </div>
 </div>
