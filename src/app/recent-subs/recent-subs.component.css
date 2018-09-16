@@ -10,7 +10,7 @@
 
 .subbar>.name{
     height: 100%;
-    color: rgb(255, 165, 0);
+    /* color: rgb(255, 165, 0); */
     padding-left: 25px;
     overflow: hidden;
     position: absolute;
@@ -24,7 +24,7 @@
     left: 440px;
     transform: skewX(-40deg);
     color: rgb(37,37,37);
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .name>span{
