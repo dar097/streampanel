@@ -17,3 +17,56 @@ body { margin: 0; font-family: FortFont, 'Roboto', sans-serif; }
     color: orangered;
 }
 
+@keyframes rainbow{
+    0% { background-position: 0% 0% }
+    100% { background-position: 200% 0% }
+}
+
+@keyframes stretchy{
+    0% { opacity: 0; transform: scaleX(0); }
+    25% { opacity: 1; } 
+    100% { opacity: 1; transform: scaleX(1); }
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes disappear {
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
+
+@keyframes circles{
+    0% { opacity: 0; transform: perspective(100px) translateZ(-1000px); }
+    10% { opacity: 1; }
+    90% { opacity: 1;  }
+    100% { opacity: 0; transform: perspective(100px) translateZ(-100px); }
+}
+
+@keyframes spook {
+    0% { transform: scale(1) }
+    50% { transform: scale(1.1) }
+    100% { transform: scale(1) }
+}
+
+@keyframes pivot {
+    0% { transform: rotate(0deg) }
+    25% { transform: rotate(10deg ) }
+    50% { transform: rotate(0deg) }
+    75% { transform: rotate(-10deg) }
+    100% { transform: rotate(0deg) }
+}
+
+.circles{
+    opacity: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    animation: circles 1.5s ease-out 0s 1 normal forwards;
+    transform: perspective(100px) translateZ(-1000px);
+}
+

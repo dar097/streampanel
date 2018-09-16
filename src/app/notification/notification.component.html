@@ -1,12 +1,25 @@
-<div style="background-color: transparent; font-size: 75px; padding: 50px 0;">
+<div style="background-color: transparent; font-size: 75px; padding: 50px 0; height: 80vh">
+		<div id="letter" #lettercontainer style="height: 500px; z-index: -99; position: absolute; display: inline-block; font-size: 600px; margin: 0 auto;">
+			<div id="circles">
+			</div>
+		</div>
+		
+		<div #subbox class="subbox">
+			<div fxLayout="row" fxLayoutAlign="space-around center">
+				<span id="username">{{subscriber}}</span>
+			</div>
+			<div fxLayout="row" fxLayoutAlign="space-around center">
+				<span id="subtext">Thank you for Subscribing!</span>
+			</div>
+		</div>
 
-<div #subbox class="subbox">
-	<div fxLayout="row" fxLayoutAlign="space-around center">
-		<span id="username">{{subscriber}}</span>
-	</div>
-	<div fxLayout="row" fxLayoutAlign="space-around center">
-		<span id="subtext">Thank you for Subscribing!</span>
-	</div>
-</div>
+	<!--  clip-path: url(#myClip); -->
+	<!-- <svg width="0" height="0">
+	<defs>
+		<clipPath id="myClip">
+			<text x="0" y="430" font-size="600px" fill="red">{{subscriber[0]}}</text>
+		</clipPath>
+	</defs>
+	</svg> -->
 
 </div>
