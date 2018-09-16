@@ -13,7 +13,7 @@ export class RecentSubsComponent implements OnInit {
     { donator: 'Joe', amount: '$50.00'},
     { donator: 'Hoixo', amount: 'NOK500.00'},
     { donator: 'Danielle Gobert', amount: '$500.00'},
-    { donator: 'MASTER OF DECIET', amount: '$500.00'}
+    { donator: 'MASTER OF DECIET', amount: 'Member'}
   ];
 
   constructor() {
@@ -48,7 +48,7 @@ export class RecentSubsComponent implements OnInit {
             tc.setAlpha(0.25);
             $('.name').first().css('text-shadow', '2px 2px 4px ' + tc.toHex8String() + ';');
           }, 100);
-          
+
         },500);
 
       }
