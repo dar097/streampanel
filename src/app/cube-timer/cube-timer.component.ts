@@ -74,7 +74,7 @@ export class CubeTimerComponent implements OnInit {
         console.log(`Glyph Spawned at [${x},${y}]`);
         let id= Date.now();
 
-        $('#glyph-house').append('<div id="' + id + '" class="glyph" style="left: ' + x + 'px; top: ' + y + 'px; background-image: url(/assets/fn-sym-' + glyphno + '.png);"></div>');
+        $('#glyph-house').append('<div id="' + id + '" class="glyph" style="left: ' + x + 'px; top: ' + y + 'px; background-image: url(assets/fn-sym-' + glyphno + '.png);"></div>');
         setTimeout(() => {
           $('#' + id).remove();
         },3100);
@@ -127,6 +127,7 @@ export class CubeTimerComponent implements OnInit {
 
       for(var slot in slots){
         var actualSlot = Number(slot)+1;
+        // $('#slot'+actualSlot).animate({ scrollTop: ((10-slots[slot])*300) }, 100);
         $('#slot'+actualSlot).scrollTop((10-slots[slot])*300);
       }
   }
@@ -169,10 +170,6 @@ export class CubeTimerComponent implements OnInit {
       this.glyphspawner = null;
       setTimeout(() => {
         this.time = this.interval;
-        if(this.time.h || this.time.m || this.time.s >= 5){
-          for(var i = 0; i< 5; i++)
-            this.reduceSecond();
-        }
         this.startTicking();
       }, 5000);
     }

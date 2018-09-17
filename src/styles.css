@@ -107,6 +107,6 @@ body { margin: 0; font-family: FortFont, 'Roboto', sans-serif; }
     transform: translateY(-500%); 
     opacity: 0;
     position: absolute;
-    filter: drop-shadow(1px 1px 5px rgb(39, 3, 59));
+    filter: hue-rotate(20deg) brightness(5) saturate(500%) drop-shadow(1px 1px 5px rgb(255, 0, 255));
     animation: rain 2s linear 1s 1 normal forwards;
 }
